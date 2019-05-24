@@ -33,7 +33,7 @@ namespace NeonDealer
         }
         private void Play_Click(object sender, RoutedEventArgs e)
         {
-            
+            this.Frame.Navigate(typeof(PlayMenu));
         }
         private void Options_Click(object sender, RoutedEventArgs e)
         {

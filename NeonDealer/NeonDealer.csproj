@@ -128,6 +128,9 @@
     <Compile Include="Options.xaml.cs">
       <DependentUpon>Options.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PlayMenu.xaml.cs">
+      <DependentUpon>PlayMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +140,7 @@
     <None Include="NeonDealer_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\BotonMultijugador.png" />
     <Content Include="Assets\Drone.png" />
     <Content Include="Assets\Edit.png" />
     <Content Include="Assets\FondoEjemplo.png" />
@@ -175,6 +179,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Options.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlayMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
