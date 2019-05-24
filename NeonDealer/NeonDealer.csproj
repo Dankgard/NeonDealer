@@ -122,8 +122,14 @@
     <Compile Include="Edit.xaml.cs">
       <DependentUpon>Edit.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Gameplay.xaml.cs">
+      <DependentUpon>Gameplay.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Multiplayer.xaml.cs">
+      <DependentUpon>Multiplayer.xaml</DependentUpon>
     </Compile>
     <Compile Include="Option.cs" />
     <Compile Include="Options.xaml.cs">
@@ -148,8 +154,10 @@
     <Content Include="Assets\FondoMenu.png" />
     <Content Include="Assets\Fondopng.png" />
     <Content Include="Assets\FondoVentana.png" />
+    <Content Include="Assets\HUD.png" />
     <Content Include="Assets\Idioma1.png" />
     <Content Include="Assets\Idioma2.png" />
+    <Content Include="Assets\Mapa.jpg" />
     <Content Include="Assets\Options.png" />
     <Content Include="Assets\OptionsAudio.png" />
     <Content Include="Assets\OptionsControls.png" />
@@ -176,9 +184,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Gameplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Multiplayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Options.xaml">
       <SubType>Designer</SubType>

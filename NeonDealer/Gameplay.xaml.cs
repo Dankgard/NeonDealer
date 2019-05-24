@@ -20,24 +20,11 @@ namespace NeonDealer
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class PlayMenu : Page
+    public sealed partial class Gameplay : Page
     {
-        public PlayMenu()
+        public Gameplay()
         {
             this.InitializeComponent();
-        }
-
-        private void Play_Return(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainPage));
-        }
-        private void ClickMultiplayer(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Multiplayer));
-        }
-        private void ClickGameplay(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Gameplay));
         }
     }
 }

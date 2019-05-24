@@ -33,10 +33,10 @@
         <Button Name="Return" HorizontalAlignment="Center" VerticalAlignment="Top" Height="71" Width="104" Click="Play_Return" Grid.Row="0" Grid.Column="0">
             <Image Source="Assets\Return.png" Margin="-56.8,-28.4,-51.2,-26.6" />
         </Button>
-        <Button Name="Singleplayer" HorizontalAlignment="Left" VerticalAlignment="Center" Height="148" Width="206" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2">
+        <Button Name="Singleplayer" HorizontalAlignment="Left" VerticalAlignment="Center" Height="148" Width="206" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" Click="ClickGameplay">
             <Image Source="Assets\Play.png" Margin="-64,0,-63,-41" HorizontalAlignment="Stretch" Height="218" VerticalAlignment="Bottom"/>
         </Button>
-        <Button Name="Multiplayer" HorizontalAlignment="Right" VerticalAlignment="Center" Height="148" Width="206" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2">
+        <Button Name="Multiplayer" HorizontalAlignment="Right" VerticalAlignment="Center" Height="148" Width="206" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2" Click="ClickMultiplayer">
             <Image Source="Assets\BotonMultijugador.png" Margin="-64,-41.4,-62.8,-40.4"/>
         </Button>
 

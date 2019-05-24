@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -20,24 +21,16 @@ namespace NeonDealer
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class PlayMenu : Page
+    public sealed partial class Multiplayer : Page
     {
-        public PlayMenu()
+        private ObservableCollection<Multiplayer> Map = new ObservableCollection<Multiplayer>();
+        public Multiplayer()
         {
             this.InitializeComponent();
         }
-
-        private void Play_Return(object sender, RoutedEventArgs e)
+        private void Multiplayer_Return(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
-        }
-        private void ClickMultiplayer(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Multiplayer));
-        }
-        private void ClickGameplay(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Gameplay));
+            this.Frame.Navigate(typeof(PlayMenu));
         }
     }
 }
