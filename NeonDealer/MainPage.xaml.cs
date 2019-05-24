@@ -26,5 +26,22 @@ namespace NeonDealer
         {
             this.InitializeComponent();
         }
+
+        private void Idiom_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+        private void Play_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+        private void Options_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Options));
+        }
+        private void Edit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Edit));
+        }
     }
 }

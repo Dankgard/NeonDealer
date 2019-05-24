@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="NeonDealer.Edit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NeonDealer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Image HorizontalAlignment="Center" Height="719" Margin="0,0,0,0" VerticalAlignment="Center" Width="1279" Source="Assets/Fondopng.png" />
+        <Image Height="560" Margin="892,0,-173,0" VerticalAlignment="Center" Width="561" Source="Assets/personaje.png"/>
+        <Image Height="488" Margin="-30,0,821,0" VerticalAlignment="Center" Source="Assets/Drone.png"/>
+        <Button Name="Return" HorizontalAlignment="Center" Margin="-1100,0,0,0" VerticalAlignment="Top" Height="71" Width="104" Click="Edit_Return">
+            <Image Source="Assets\Return.png" Margin="-56.8,-28.4,-51.2,-26.6" />
+        </Button>
+    </Grid>
+</Page>

@@ -119,8 +119,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Edit.xaml.cs">
+      <DependentUpon>Edit.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Options.xaml.cs">
+      <DependentUpon>Options.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -135,12 +141,17 @@
     <Content Include="Assets\Edit.png" />
     <Content Include="Assets\FondoEjemplo.png" />
     <Content Include="Assets\FondoMenu.png" />
+    <Content Include="Assets\Fondopng.png" />
     <Content Include="Assets\Idioma1.png" />
     <Content Include="Assets\Idioma2.png" />
     <Content Include="Assets\Options.png" />
+    <Content Include="Assets\OptionsAudio.png" />
+    <Content Include="Assets\OptionsControls.png" />
+    <Content Include="Assets\OptionsVideo.png" />
     <Content Include="Assets\personaje.png" />
     <Content Include="Assets\Play.png" />
-    <Content Include="Assets\vinilos-fondo-futurista-abstracto.jpg.jpg" />
+    <Content Include="Assets\fondo.jpg" />
+    <Content Include="Assets\Return.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -155,9 +166,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Edit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Options.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
