@@ -131,6 +131,16 @@
     <None Include="NeonDealer_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Drone.png" />
+    <Content Include="Assets\Edit.png" />
+    <Content Include="Assets\FondoEjemplo.png" />
+    <Content Include="Assets\FondoMenu.png" />
+    <Content Include="Assets\Idioma1.png" />
+    <Content Include="Assets\Idioma2.png" />
+    <Content Include="Assets\Options.png" />
+    <Content Include="Assets\personaje.png" />
+    <Content Include="Assets\Play.png" />
+    <Content Include="Assets\vinilos-fondo-futurista-abstracto.jpg.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

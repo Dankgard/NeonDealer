@@ -9,6 +9,21 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Image HorizontalAlignment="Center" Height="1099" Margin="0,1,0,0" VerticalAlignment="Top" Width="1279" Source="Assets/FondoMenu.png" />
+
+
+        <Button Name="Play" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Height="148" Width="206">
+            <Image Source="Assets\Play.png" Margin="-64,-41.4,-62.8,-40.4"/>
+        </Button>
+        <Button Name="Options" HorizontalAlignment="Center" Margin="-600,0,0,0" VerticalAlignment="Center" Height="148" Width="206">
+            <Image Source="Assets\Options.png" Margin="-64,-41.4,-62.8,-40.4"/>
+        </Button>
+        <Button Name="Edit" HorizontalAlignment="Center" Margin="600,0,0,0" VerticalAlignment="Center" Height="148" Width="206">
+            <Image Source="Assets\Edit.png" Margin="-64,-41.4,-62.8,-40.4"/>
+        </Button>
+        <Button Name="Idiom" HorizontalAlignment="Center" Margin="0,565,0,0" VerticalAlignment="Top" Height="61" Width="107">
+            <Image Source="Assets\Idioma1.png" Margin="-10.4,-19.4,-10.2,-18" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Button>
 
     </Grid>
 </Page>
