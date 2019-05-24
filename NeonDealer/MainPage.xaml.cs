@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0xc0a
@@ -22,14 +23,33 @@ namespace NeonDealer
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        bool spain = true;
+
         public MainPage()
         {
             this.InitializeComponent();
+            Idiom2.IsEnabled = false;
+            Idiom2.Visibility = Visibility.Collapsed;
         }
 
         private void Idiom_Click(object sender, RoutedEventArgs e)
         {
-            
+            if (spain)
+            {
+                Idiom2.IsEnabled = true;
+                Idiom2.Visibility = Visibility.Visible;
+                Idiom.IsEnabled = false;
+                Idiom.Visibility = Visibility.Collapsed;
+                spain = false;
+            }
+            else
+            {
+                Idiom.IsEnabled = true;
+                Idiom.Visibility = Visibility.Visible;
+                Idiom2.IsEnabled = false;
+                Idiom2.Visibility = Visibility.Collapsed;
+                spain = true;
+            }
         }
         private void Play_Click(object sender, RoutedEventArgs e)
         {

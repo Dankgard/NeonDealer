@@ -9,10 +9,30 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Image HorizontalAlignment="Center" Height="719" Margin="0,0,0,0" VerticalAlignment="Center" Width="1279" Source="Assets/Fondopng.png" />
-        <Image Height="560" Margin="892,0,-173,0" VerticalAlignment="Center" Width="561" Source="Assets/personaje.png"/>
-        <Image Height="488" Margin="-30,0,821,0" VerticalAlignment="Center" Source="Assets/Drone.png"/>
-        <Button Name="Return" HorizontalAlignment="Center" Margin="-1100,0,0,0" VerticalAlignment="Top" Height="71" Width="104" Click="Edit_Return">
+
+        <Grid.Background>
+            <ImageBrush AlignmentX="Center" ImageSource="Assets/Fondopng.png"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Image VerticalAlignment="Top" Source="Assets/personaje.png" Grid.Column="4" Grid.ColumnSpan="3" Height="963" Margin="179,181,-175,0" Grid.RowSpan="5" HorizontalAlignment="Stretch"/>
+        <Image VerticalAlignment="Top" Source="Assets/Drone.png" Grid.ColumnSpan="3" Height="963" Margin="-53,181,56,0" Grid.RowSpan="5" HorizontalAlignment="Stretch"/>
+        <Button Name="Return" HorizontalAlignment="Center" VerticalAlignment="Top" Height="71" Width="104" Click="Edit_Return" Grid.Row="0" Grid.Column="0">
             <Image Source="Assets\Return.png" Margin="-56.8,-28.4,-51.2,-26.6" />
         </Button>
     </Grid>

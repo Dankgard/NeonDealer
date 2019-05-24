@@ -9,20 +9,41 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Image HorizontalAlignment="Center" Height="719" Margin="0,0,0,0" VerticalAlignment="Center" Width="1279" Source="Assets/FondoMenu.png" />
+        <Grid.Background>
+            <ImageBrush AlignmentX="Center" ImageSource="Assets/FondoMenu.png"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
 
 
-        <Button Name="Play" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Height="148" Width="206" Click="Play_Click">
-            <Image Source="Assets\Play.png" Margin="-64,-41.4,-62.8,-40.4"/>
+        <Button Name="Play" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Height="148" Width="206" Click="Play_Click" Grid.Row="2" Grid.Column="3">
+            <Image Source="Assets\Play.png" Margin="-13,-13,-13,-13"/>
         </Button>
-        <Button Name="Options" HorizontalAlignment="Center" Margin="-600,0,0,0" VerticalAlignment="Center" Height="148" Width="206" Click="Options_Click">
-            <Image Source="Assets\Options.png" Margin="-64,-41.4,-62.8,-40.4"/>
+        <Button Name="Options" HorizontalAlignment="Center" VerticalAlignment="Center" Height="148" Width="206" Click="Options_Click" Grid.Row="2" Grid.Column="2">
+            <Image Source="Assets\Options.png"  Margin="-13,-13,-13,-13"/>
         </Button>
-        <Button Name="Edit" HorizontalAlignment="Center" Margin="600,0,0,0" VerticalAlignment="Center" Height="148" Width="206" Click="Edit_Click">
-            <Image Source="Assets\Edit.png" Margin="-64,-41.4,-62.8,-40.4"/>
+        <Button Name="Edit" HorizontalAlignment="Center" VerticalAlignment="Center" Height="148" Width="206" Click="Edit_Click" Grid.Row="2" Grid.Column="4">
+            <Image Source="Assets\Edit.png" Margin="-13,-13,-13,-13"/>
         </Button>
-        <Button Name="Idiom" HorizontalAlignment="Center" Margin="0,565,0,0" VerticalAlignment="Top" Height="61" Width="107" Click="Idiom_Click">
-            <Image Name="flag" Source="Assets\Idioma1.png" Margin="-10.4,-19.4,-10.2,-18" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Name="Idiom" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="Idiom_Click" Grid.Row="3" Grid.Column="3" Height="54" Margin="0,0,0,0" Width="102">
+            <Image Name="flag" Source="Assets\Idioma1.png" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Button>
+        <Button Name="Idiom2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="Idiom_Click" Grid.Row="3" Grid.Column="3" Height="54" Margin="0,0,0,0" Width="102">
+            <Image Name="flag2" Source="Assets\Idioma2.png" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
         </Button>
 
     </Grid>

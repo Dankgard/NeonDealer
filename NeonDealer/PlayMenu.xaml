@@ -9,17 +9,36 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Image HorizontalAlignment="Center" Height="719" Margin="0,0,0,0" VerticalAlignment="Center" Width="1279" Source="Assets/Fondopng.png" />
-        
-        <Button Name="Return" HorizontalAlignment="Center" Margin="-1100,0,0,0" VerticalAlignment="Top" Height="71" Width="104" Click="Play_Return">
+
+            <Grid.Background>
+                <ImageBrush AlignmentX="Center" ImageSource="Assets/Fondopng.png"/>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+        <Button Name="Return" HorizontalAlignment="Center" VerticalAlignment="Top" Height="71" Width="104" Click="Play_Return" Grid.Row="0" Grid.Column="0">
             <Image Source="Assets\Return.png" Margin="-56.8,-28.4,-51.2,-26.6" />
         </Button>
-        <Button Name="Multiplayer" HorizontalAlignment="Center" Margin="-300,0,0,0" VerticalAlignment="Center" Height="148" Width="206">
+        <Button Name="Singleplayer" HorizontalAlignment="Left" VerticalAlignment="Center" Height="148" Width="206" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2">
+            <Image Source="Assets\Play.png" Margin="-64,0,-63,-41" HorizontalAlignment="Stretch" Height="218" VerticalAlignment="Bottom"/>
+        </Button>
+        <Button Name="Multiplayer" HorizontalAlignment="Right" VerticalAlignment="Center" Height="148" Width="206" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2">
             <Image Source="Assets\BotonMultijugador.png" Margin="-64,-41.4,-62.8,-40.4"/>
         </Button>
-        <Button Name="Singleplayer" HorizontalAlignment="Center" Margin="300,0,0,0" VerticalAlignment="Center" Height="148" Width="206">
-            <Image Source="Assets\Play.png" Margin="-64,-41.4,-62.8,-40.4"/>
-        </Button>
-        
+
     </Grid>
 </Page>

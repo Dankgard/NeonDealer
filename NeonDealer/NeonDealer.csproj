@@ -125,6 +125,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Option.cs" />
     <Compile Include="Options.xaml.cs">
       <DependentUpon>Options.xaml</DependentUpon>
     </Compile>
@@ -146,6 +147,7 @@
     <Content Include="Assets\FondoEjemplo.png" />
     <Content Include="Assets\FondoMenu.png" />
     <Content Include="Assets\Fondopng.png" />
+    <Content Include="Assets\FondoVentana.png" />
     <Content Include="Assets\Idioma1.png" />
     <Content Include="Assets\Idioma2.png" />
     <Content Include="Assets\Options.png" />
