@@ -85,5 +85,9 @@ namespace NeonDealer
             else
                 Mapa.Visibility = Visibility.Collapsed;
         }
+        private void ClickVictory(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Podium));
+        }
     }
 }

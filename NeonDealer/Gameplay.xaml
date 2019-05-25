@@ -51,6 +51,8 @@
         </Button>
 
         <Image Name="Mapa" Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="5" Height="791" Margin="0,0,0,0" Grid.RowSpan="5" VerticalAlignment="Center" Source="Assets//x.png" HorizontalAlignment="Center" Width="647"/>
-
+        <Button Name="Victory" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" Width="49" Grid.Row="4" Grid.Column="6" Margin="0,79,0,0" Click="ClickVictory">
+            <Image Source="Assets\Victory.png" Margin="-45.8,-21.4,-43.6,-22"/>
+        </Button>
     </Grid>
 </Page>

@@ -27,6 +27,8 @@ namespace NeonDealer
         public Multiplayer()
         {
             this.InitializeComponent();
+            Map2.IsEnabled = false;
+            Map2.Visibility = Visibility.Collapsed;
         }
         private void Multiplayer_Return(object sender, RoutedEventArgs e)
         {
@@ -44,6 +46,23 @@ namespace NeonDealer
         private void Play(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Gameplay));
+        }
+        private void ClickMap1(object sender, RoutedEventArgs e)
+        {
+            if (Map2.IsEnabled == false)
+            {
+                Map2.IsEnabled = true;
+                Map2.Visibility = Visibility.Visible;
+                Map1.IsEnabled = false;
+                Map1.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                Map1.IsEnabled = true;
+                Map1.Visibility = Visibility.Visible;
+                Map2.IsEnabled = false;
+                Map2.Visibility = Visibility.Collapsed;
+            }
         }
     }
 }

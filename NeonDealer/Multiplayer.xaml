@@ -29,16 +29,19 @@
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Button Grid.Column="3" Grid.Row="0" Grid.RowSpan="2" Height="115" Margin="0,202,0,0" VerticalAlignment="Top" HorizontalAlignment="Center">
+        <Button Name="Map1" Grid.Column="3" Grid.Row="0" Grid.RowSpan="2" Height="148" Margin="0,90,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="235" Click="ClickMap1">
             <Image  Source="Assets//Mapa.jpg"/>
+        </Button>
+        <Button Name="Map2" Grid.Column="3" Grid.Row="0" Grid.RowSpan="2" Height="148" Margin="0,90,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="235" Click="ClickMap1">
+            <Image  Source="Assets//Mapa2.jpg"/>
         </Button>
 
         <Button Name="Return" HorizontalAlignment="Center" VerticalAlignment="Top" Height="71" Width="104" Click="Multiplayer_Return" Grid.Row="0" Grid.Column="0">
             <Image Source="Assets\Return.png" Margin="-56.8,-28.4,-51.2,-26.6" />
         </Button>
         <Button  Name="modebutton" Click="Mode" Content="Duelo por equipos" Grid.Column="3" HorizontalAlignment="Center" Margin="0,97,0,0" Grid.Row="1" VerticalAlignment="Top" Height="77" Width="156" RequestedTheme="Dark" BorderBrush="AntiqueWhite"/>
-        <Button  Click="Play" Content="Entrar" Grid.Column="1" HorizontalAlignment="Center" Margin="0,135,0,0" Grid.Row="2" VerticalAlignment="Top" Height="77" Width="156" RequestedTheme="Dark" BorderBrush="AntiqueWhite" RenderTransformOrigin="0.154,2.623"/>
-        <Button  Click="Play" Content="Crear" Grid.Column="5" HorizontalAlignment="Center" Margin="0,135,0,0" Grid.Row="2" VerticalAlignment="Top" Height="77" Width="156" RequestedTheme="Dark" BorderBrush="AntiqueWhite"/>
+        <Button  Click="Play" Content="Entrar" Grid.Column="1" HorizontalAlignment="Left" Margin="16.8,104,0,0" Grid.Row="2" VerticalAlignment="Top" Height="77" Width="156" RequestedTheme="Dark" BorderBrush="AntiqueWhite" RenderTransformOrigin="0.154,2.623" Grid.RowSpan="2"/>
+        <Button  Click="Play" Content="Crear" Grid.Column="5" HorizontalAlignment="Left" Margin="9.6,104,0,0" Grid.Row="2" VerticalAlignment="Top" Height="77" Width="156" RequestedTheme="Dark" BorderBrush="AntiqueWhite" Grid.RowSpan="2"/>
         <TextBlock Width ="300" Grid.ColumnSpan="3" Grid.Column="2" Margin="201,0,142,0" Grid.Row="2"><Run Foreground="White" FontSize="25" Text="Número de jugadores"></Run></TextBlock>
         <Slider RequestedTheme="Dark" BorderBrush="AntiqueWhite" Width="100" Margin="0,49,0,201" Grid.Column="3" HorizontalAlignment="Center" Grid.RowSpan="2" Grid.Row="2" Maximum="10" Minimum="1"/>
     </Grid>
