@@ -150,6 +150,7 @@
     <None Include="NeonDealer_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\BotonMapa.png" />
     <Content Include="Assets\BotonMultijugador.png" />
     <Content Include="Assets\Drone.png" />
     <Content Include="Assets\Edit.png" />
@@ -162,6 +163,7 @@
     <Content Include="Assets\Idioma1.png" />
     <Content Include="Assets\Idioma2.png" />
     <Content Include="Assets\Mapa.jpg" />
+    <Content Include="Assets\MapaGrande.png" />
     <Content Include="Assets\No.png" />
     <Content Include="Assets\Options.png" />
     <Content Include="Assets\OptionsAudio.png" />

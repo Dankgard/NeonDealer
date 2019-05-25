@@ -32,6 +32,13 @@
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
 
+        <Button Name="Pause" HorizontalAlignment="Center" VerticalAlignment="Top" Height="71" Width="100" Grid.Row="0" Grid.Column="3" Margin="0,0,0,0" Click="ClickPause">
+            <Image Source="Assets\Pause.png" Margin="-22.4,-13,-23.2,-11.8"/>
+        </Button>
+        <Button Name="Map" HorizontalAlignment="Center" VerticalAlignment="Top" Height="71" Width="100" Grid.Row="0" Grid.Column="5" Margin="0,0,0,0" Click="ClickMap">
+            <Image Source="Assets\BotonMapa.png" Margin="-12.4,-3.4,-14.2,-2.2"/>
+        </Button>
+
         <Image Name="Panel" Grid.Column="3" Grid.ColumnSpan="3" Height="732" Margin="54.8,47,57.4,0" Grid.RowSpan="5" VerticalAlignment="Top" Source="Assets//Panel2.png" HorizontalAlignment="Stretch"/>
         <Button Name="Restart" HorizontalAlignment="Center" VerticalAlignment="Center" Height="97" Width="134" Grid.Row="1" Grid.Column="4" Margin="0,0,0,0" Click="ClickRestart">
             <Image Source="Assets\Play.png" Margin="-45.8,-21.4,-43.6,-22"/>
@@ -42,9 +49,8 @@
         <Button Name="Exit" HorizontalAlignment="Center" VerticalAlignment="Center" Height="97" Width="134" Grid.Row="3" Grid.Column="4" Margin="0,0,0,0" Click="ClickExit">
             <Image Source="Assets\exit.png" Margin="-45.8,-21.4,-43.6,-22"/>
         </Button>
-        <Button Name="Pause" HorizontalAlignment="Center" VerticalAlignment="Top" Height="71" Width="100" Grid.Row="0" Grid.Column="3" Margin="0,0,0,0" Click="ClickPause">
-            <Image Source="Assets\Pause.png" Margin="-22.4,-13,-23.2,-11.8"/>
-        </Button>
+
+        <Image Name="Mapa" Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="5" Height="791" Margin="0,0,0,0" Grid.RowSpan="5" VerticalAlignment="Center" Source="Assets//MapaGrande.png" HorizontalAlignment="Center" Width="647"/>
 
     </Grid>
 </Page>

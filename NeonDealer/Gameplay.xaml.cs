@@ -28,13 +28,14 @@ namespace NeonDealer
             this.InitializeComponent();
 
             Desactivate();
+            Mapa.Visibility = Visibility.Collapsed;
         }
         private void OnKeyDownHandler(object sender, KeyEventArgs e)
         {   
              if (e.VirtualKey == Windows.System.VirtualKey.Escape)
              {
-                Activate();
-             }
+                Activate();               
+            }
         }
 
         private void ClickPause(object sender, RoutedEventArgs e)
@@ -75,6 +76,14 @@ namespace NeonDealer
         private void ClickOptions(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(OptionsGame));
+        }
+
+        private void ClickMap(object sender, RoutedEventArgs e)
+        {
+            if (Mapa.Visibility == Visibility.Collapsed)
+                Mapa.Visibility = Visibility.Visible;
+            else
+                Mapa.Visibility = Visibility.Collapsed;
         }
     }
 }
