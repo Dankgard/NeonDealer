@@ -32,5 +32,18 @@ namespace NeonDealer
         {
             this.Frame.Navigate(typeof(PlayMenu));
         }
+
+        private void Mode(object sender, RoutedEventArgs e)
+        {
+            if ((string)modebutton.Content == "Carrera")
+                modebutton.Content = "Duelo por equipos";
+            else
+                modebutton.Content = "Carrera";
+        }
+
+        private void Play(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Gameplay));
+        }
     }
 }

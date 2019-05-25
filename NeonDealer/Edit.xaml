@@ -31,9 +31,22 @@
         </Grid.RowDefinitions>
 
         <Image VerticalAlignment="Top" Source="Assets/personaje.png" Grid.Column="4" Grid.ColumnSpan="3" Height="963" Margin="179,181,-175,0" Grid.RowSpan="5" HorizontalAlignment="Stretch"/>
-        <Image VerticalAlignment="Top" Source="Assets/Drone.png" Grid.ColumnSpan="3" Height="963" Margin="-53,181,56,0" Grid.RowSpan="5" HorizontalAlignment="Stretch"/>
+        <Image VerticalAlignment="Top" Source="Assets/Drone.png" Grid.ColumnSpan="3" Height="963" Margin="-71,181,74,0" Grid.RowSpan="5"/>
         <Button Name="Return" HorizontalAlignment="Center" VerticalAlignment="Top" Height="71" Width="104" Click="Edit_Return" Grid.Row="0" Grid.Column="0">
             <Image Source="Assets\Return.png" Margin="-56.8,-28.4,-51.2,-26.6" />
         </Button>
+        <Button Click="ChooseModel" HorizontalAlignment="Left" Height="151" Margin="66,69,0,0" Grid.Row="3" VerticalAlignment="Top" Width="192" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Image Source="Assets/FondoVentana.png" />
+        </Button>
+        <Button Click="ChooseColor" HorizontalAlignment="Left" Height="149" Margin="63,71,0,0" Grid.Row="3" VerticalAlignment="Top" Width="190" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Image Source="Assets/FondoVentana.png" />
+        </Button>
+        <Image Source="Assets/Panel2.png" HorizontalAlignment="Left" Height="614" Margin="44,181,0,0" VerticalAlignment="Top" Width="993" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="4" Opacity="100"/>
+        <Image Source="Assets/Panel2.png" HorizontalAlignment="Left" Height="614" Margin="10,181,0,0" VerticalAlignment="Top" Width="993" Grid.Column="4" Grid.ColumnSpan="3" Grid.RowSpan="4" Opacity="100"/>
+        <Image Name="colorpicker" Source="Assets/Idioma1.png" HorizontalAlignment="Left" Height="178" Margin="55,0,0,0" VerticalAlignment="Top" Width="288" Grid.Column="2" Grid.ColumnSpan="2" Opacity="100" Grid.Row="2"/>
+        <Image Name="modelpicker" Source="Assets/Idioma2.png" HorizontalAlignment="Left" Height="178" Margin="55,0,0,0" VerticalAlignment="Top" Width="288" Grid.Column="2" Grid.ColumnSpan="2" Opacity="100" Grid.Row="2"/>
+        <Image Source="Assets/Idioma2.png" HorizontalAlignment="Left" Margin="55,11,0,11" Width="220" Grid.Column="4" Grid.ColumnSpan="2" Opacity="100" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <Image Source="Assets/Idioma2.png" HorizontalAlignment="Left" Height="150" Margin="55,185,0,0" VerticalAlignment="Top" Width="220" Grid.Column="4" Grid.ColumnSpan="2" Opacity="100" Grid.Row="2" Grid.RowSpan="2" RenderTransformOrigin="0.545,0.24"/>
+        <Image Source="Assets/Idioma2.png" HorizontalAlignment="Left" Height="178" Margin="55,18,0,0" VerticalAlignment="Top" Width="220" Grid.Column="4" Grid.ColumnSpan="2" Opacity="100" Grid.Row="2"/>
     </Grid>
 </Page>

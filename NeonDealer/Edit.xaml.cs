@@ -25,10 +25,24 @@ namespace NeonDealer
         public Edit()
         {
             this.InitializeComponent();
+            colorpicker.Visibility = Visibility.Collapsed;
+            modelpicker.Visibility = Visibility.Collapsed;
         }
         private void Edit_Return(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage));
+        }
+
+        private void ChooseColor(object sender, RoutedEventArgs e)
+        {
+            colorpicker.Visibility = Visibility.Visible;
+            modelpicker.Visibility = Visibility.Collapsed;
+        }
+
+        private void ChooseModel(object sender, RoutedEventArgs e)
+        {
+            colorpicker.Visibility = Visibility.Collapsed;
+            modelpicker.Visibility = Visibility.Visible;
         }
     }
 }
