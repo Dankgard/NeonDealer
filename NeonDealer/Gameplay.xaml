@@ -12,5 +12,39 @@
         <Grid.Background>
             <ImageBrush AlignmentX="Center" ImageSource="Assets/HUD.png"/>
         </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Image Name="Panel" Grid.Column="3" Grid.ColumnSpan="3" Height="732" Margin="54.8,47,57.4,0" Grid.RowSpan="5" VerticalAlignment="Top" Source="Assets//Panel2.png" HorizontalAlignment="Stretch"/>
+        <Button Name="Restart" HorizontalAlignment="Center" VerticalAlignment="Center" Height="97" Width="134" Grid.Row="1" Grid.Column="4" Margin="0,0,0,0" Click="ClickRestart">
+            <Image Source="Assets\Play.png" Margin="-45.8,-21.4,-43.6,-22"/>
+        </Button>
+        <Button Name="Options" HorizontalAlignment="Center" VerticalAlignment="Center" Height="97" Width="134" Grid.Row="2" Grid.Column="4" Margin="0,0,0,0" Click="ClickOptions">
+            <Image Source="Assets\options.png" Margin="-45.8,-21.4,-43.6,-22"/>
+        </Button>
+        <Button Name="Exit" HorizontalAlignment="Center" VerticalAlignment="Center" Height="97" Width="134" Grid.Row="3" Grid.Column="4" Margin="0,0,0,0" Click="ClickExit">
+            <Image Source="Assets\exit.png" Margin="-45.8,-21.4,-43.6,-22"/>
+        </Button>
+        <Button Name="Pause" HorizontalAlignment="Center" VerticalAlignment="Top" Height="71" Width="100" Grid.Row="0" Grid.Column="3" Margin="0,0,0,0" Click="ClickPause">
+            <Image Source="Assets\Pause.png" Margin="-22.4,-13,-23.2,-11.8"/>
+        </Button>
+
     </Grid>
 </Page>

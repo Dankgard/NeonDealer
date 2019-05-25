@@ -10,25 +10,25 @@
 
     <Grid>
 
-            <Grid.Background>
-                <ImageBrush AlignmentX="Center" ImageSource="Assets/Fondopng.png"/>
-            </Grid.Background>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"></ColumnDefinition>
-                <ColumnDefinition Width="1*"></ColumnDefinition>
-                <ColumnDefinition Width="1*"></ColumnDefinition>
-                <ColumnDefinition Width="1*"></ColumnDefinition>
-                <ColumnDefinition Width="1*"></ColumnDefinition>
-                <ColumnDefinition Width="1*"></ColumnDefinition>
-                <ColumnDefinition Width="1*"></ColumnDefinition>
-                <ColumnDefinition Width="1*"></ColumnDefinition>
-                <ColumnDefinition Width="1*"></ColumnDefinition>
+        <Grid.Background>
+            <ImageBrush AlignmentX="Center" ImageSource="Assets/Fondopng.png"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*"></RowDefinition>
-                <RowDefinition Height="1*"></RowDefinition>
-                <RowDefinition Height="1*"></RowDefinition>
-            </Grid.RowDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
 
         <Button Name="Return" HorizontalAlignment="Center" VerticalAlignment="Top" Height="71" Width="104" Click="Play_Return" Grid.Row="0" Grid.Column="0">
             <Image Source="Assets\Return.png" Margin="-56.8,-28.4,-51.2,-26.6" />
@@ -38,6 +38,14 @@
         </Button>
         <Button Name="Multiplayer" HorizontalAlignment="Right" VerticalAlignment="Center" Height="148" Width="206" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2" Click="ClickMultiplayer">
             <Image Source="Assets\BotonMultijugador.png" Margin="-64,-41.4,-62.8,-40.4"/>
+        </Button>
+
+        <Image Name="Panel" Grid.Column="3" Grid.ColumnSpan="3" Height="585" Margin="0,110,0,0" Grid.RowSpan="4" VerticalAlignment="Top" Width="252" Source="Assets//Panel.png"/>
+        <Button Name="No" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="16" Width="22" Grid.Row="1" Grid.Column="5" Click="ClickCancel" Margin="0,0,0,0">
+            <Image Source="Assets\No.png" Margin="-64,-41.4,-62.8,-40.4"/>
+        </Button>
+        <Button Name="Yes" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="16" Width="22" Grid.Row="1" Grid.Column="3" Click="ClickPlay" Margin="0,0,0,0">
+            <Image Source="Assets\Yes.png" Margin="-44.2,-34.4,-61.8,-33.4"/>
         </Button>
 
     </Grid>

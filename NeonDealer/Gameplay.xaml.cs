@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +26,55 @@ namespace NeonDealer
         public Gameplay()
         {
             this.InitializeComponent();
+
+            Desactivate();
+        }
+        private void OnKeyDownHandler(object sender, KeyEventArgs e)
+        {   
+             if (e.VirtualKey == Windows.System.VirtualKey.Escape)
+             {
+                Activate();
+             }
+        }
+
+        private void ClickPause(object sender, RoutedEventArgs e)
+        {
+            Activate();
+        }
+
+        private void ClickRestart(object sender, RoutedEventArgs e)
+        {
+            Desactivate();
+        }
+        void Desactivate()
+        {
+            Panel.Visibility = Visibility.Collapsed;
+            Restart.IsEnabled = false;
+            Restart.Visibility = Visibility.Collapsed;
+            Options.IsEnabled = false;
+            Options.Visibility = Visibility.Collapsed;
+            Exit.IsEnabled = false;
+            Exit.Visibility = Visibility.Collapsed;
+        }
+        void Activate()
+        {
+            Panel.Visibility = Visibility.Visible;
+            Restart.IsEnabled = true;
+            Restart.Visibility = Visibility.Visible;
+            Options.IsEnabled = true;
+            Options.Visibility = Visibility.Visible;
+            Exit.IsEnabled = true;
+            Exit.Visibility = Visibility.Visible;
+        }
+
+        private void ClickExit(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
+
+        private void ClickOptions(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(OptionsGame));
         }
     }
 }

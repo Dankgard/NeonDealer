@@ -25,6 +25,11 @@ namespace NeonDealer
         public PlayMenu()
         {
             this.InitializeComponent();
+            Yes.IsEnabled = false;
+            Yes.Visibility = Visibility.Collapsed;
+            No.IsEnabled = false;
+            No.Visibility = Visibility.Collapsed;
+            Panel.Visibility = Visibility.Collapsed;
         }
 
         private void Play_Return(object sender, RoutedEventArgs e)
@@ -37,7 +42,26 @@ namespace NeonDealer
         }
         private void ClickGameplay(object sender, RoutedEventArgs e)
         {
+            // this.Frame.Navigate(typeof(Gameplay));
+            Yes.IsEnabled = true;
+            Yes.Visibility = Visibility.Visible;
+            No.IsEnabled = true;
+            No.Visibility = Visibility.Visible;
+            //Panel.IsEnabled = true;
+            Panel.Visibility = Visibility.Visible;
+        }
+        private void ClickPlay(object sender, RoutedEventArgs e)
+        {
             this.Frame.Navigate(typeof(Gameplay));
+        }
+        private void ClickCancel(object sender, RoutedEventArgs e)
+        {
+            Yes.IsEnabled = false;
+            Yes.Visibility = Visibility.Collapsed;
+            No.IsEnabled = false;
+            No.Visibility = Visibility.Collapsed;
+            //Panel.IsEnabled = true;
+            Panel.Visibility = Visibility.Collapsed;
         }
     }
 }

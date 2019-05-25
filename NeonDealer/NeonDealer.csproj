@@ -135,6 +135,9 @@
     <Compile Include="Options.xaml.cs">
       <DependentUpon>Options.xaml</DependentUpon>
     </Compile>
+    <Compile Include="OptionsGame.xaml.cs">
+      <DependentUpon>OptionsGame.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PlayMenu.xaml.cs">
       <DependentUpon>PlayMenu.xaml</DependentUpon>
     </Compile>
@@ -150,6 +153,7 @@
     <Content Include="Assets\BotonMultijugador.png" />
     <Content Include="Assets\Drone.png" />
     <Content Include="Assets\Edit.png" />
+    <Content Include="Assets\Exit.png" />
     <Content Include="Assets\FondoEjemplo.png" />
     <Content Include="Assets\FondoMenu.png" />
     <Content Include="Assets\Fondopng.png" />
@@ -158,14 +162,19 @@
     <Content Include="Assets\Idioma1.png" />
     <Content Include="Assets\Idioma2.png" />
     <Content Include="Assets\Mapa.jpg" />
+    <Content Include="Assets\No.png" />
     <Content Include="Assets\Options.png" />
     <Content Include="Assets\OptionsAudio.png" />
     <Content Include="Assets\OptionsControls.png" />
     <Content Include="Assets\OptionsVideo.png" />
+    <Content Include="Assets\Panel.png" />
+    <Content Include="Assets\Panel2.png" />
+    <Content Include="Assets\Pause.png" />
     <Content Include="Assets\personaje.png" />
     <Content Include="Assets\Play.png" />
     <Content Include="Assets\fondo.jpg" />
     <Content Include="Assets\Return.png" />
+    <Content Include="Assets\Yes.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -197,6 +206,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Options.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OptionsGame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
