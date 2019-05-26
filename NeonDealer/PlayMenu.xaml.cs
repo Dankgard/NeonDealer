@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.System;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -30,14 +32,35 @@ namespace NeonDealer
             No.IsEnabled = false;
             No.Visibility = Visibility.Collapsed;
             Panel.Visibility = Visibility.Collapsed;
+        
+
+        Window.Current.CoreWindow.KeyDown += CoreWindow_KeyDown;
         }
 
-        private void Play_Return(object sender, RoutedEventArgs e)
+    private void CoreWindow_KeyDown(CoreWindow sender, KeyEventArgs args)
+    {
+        if (args.Handled)
         {
+            return;
+        }
+
+        switch (args.VirtualKey)
+        {
+            case VirtualKey.GamepadB:
+                    Window.Current.CoreWindow.KeyDown -= CoreWindow_KeyDown;
+                    this.Frame.Navigate(typeof(MainPage));
+                break;
+        }
+    }
+
+    private void Play_Return(object sender, RoutedEventArgs e)
+        {
+            Window.Current.CoreWindow.KeyDown -= CoreWindow_KeyDown;
             this.Frame.Navigate(typeof(MainPage));
         }
         private void ClickMultiplayer(object sender, RoutedEventArgs e)
         {
+            Window.Current.CoreWindow.KeyDown -= CoreWindow_KeyDown;
             this.Frame.Navigate(typeof(Multiplayer));
         }
         private void ClickGameplay(object sender, RoutedEventArgs e)
@@ -52,6 +75,7 @@ namespace NeonDealer
         }
         private void ClickPlay(object sender, RoutedEventArgs e)
         {
+            Window.Current.CoreWindow.KeyDown -= CoreWindow_KeyDown;
             this.Frame.Navigate(typeof(Gameplay));
         }
         private void ClickCancel(object sender, RoutedEventArgs e)

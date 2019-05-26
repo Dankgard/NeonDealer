@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.System;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -27,9 +29,29 @@ namespace NeonDealer
             this.InitializeComponent();
             colorpicker.Visibility = Visibility.Collapsed;
             modelpicker.Visibility = Visibility.Collapsed;
+        
+
+        Window.Current.CoreWindow.KeyDown += CoreWindow_KeyDown;
         }
-        private void Edit_Return(object sender, RoutedEventArgs e)
+
+    private void CoreWindow_KeyDown(CoreWindow sender, KeyEventArgs args)
+    {
+        if (args.Handled)
         {
+            return;
+        }
+
+        switch (args.VirtualKey)
+        {
+            case VirtualKey.GamepadB:
+                    Window.Current.CoreWindow.KeyDown -= CoreWindow_KeyDown;
+                    this.Frame.Navigate(typeof(MainPage));
+                break;
+        }
+    }
+    private void Edit_Return(object sender, RoutedEventArgs e)
+        {
+            Window.Current.CoreWindow.KeyDown -= CoreWindow_KeyDown;
             this.Frame.Navigate(typeof(MainPage));
         }
 

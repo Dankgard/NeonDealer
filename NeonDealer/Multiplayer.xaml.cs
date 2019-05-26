@@ -6,6 +6,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.System;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -29,9 +31,29 @@ namespace NeonDealer
             this.InitializeComponent();
             Map2.IsEnabled = false;
             Map2.Visibility = Visibility.Collapsed;
+        
+
+        Window.Current.CoreWindow.KeyDown += CoreWindow_KeyDown;
         }
-        private void Multiplayer_Return(object sender, RoutedEventArgs e)
+
+    private void CoreWindow_KeyDown(CoreWindow sender, KeyEventArgs args)
+    {
+        if (args.Handled)
         {
+            return;
+        }
+
+        switch (args.VirtualKey)
+        {
+            case VirtualKey.GamepadB:
+                    Window.Current.CoreWindow.KeyDown -= CoreWindow_KeyDown;
+                    this.Frame.Navigate(typeof(PlayMenu));
+                break;
+        }
+    }
+    private void Multiplayer_Return(object sender, RoutedEventArgs e)
+        {
+            Window.Current.CoreWindow.KeyDown -= CoreWindow_KeyDown;
             this.Frame.Navigate(typeof(PlayMenu));
         }
 
@@ -45,6 +67,7 @@ namespace NeonDealer
 
         private void Play(object sender, RoutedEventArgs e)
         {
+            Window.Current.CoreWindow.KeyDown -= CoreWindow_KeyDown;
             this.Frame.Navigate(typeof(Gameplay));
         }
         private void ClickMap1(object sender, RoutedEventArgs e)
