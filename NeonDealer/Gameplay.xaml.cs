@@ -31,6 +31,13 @@ namespace NeonDealer
 
             Deactivate();
             Mapa.Visibility = Visibility.Collapsed;
+
+            Yes.IsEnabled = false;
+            Yes.Visibility = Visibility.Collapsed;
+            No.IsEnabled = false;
+            No.Visibility = Visibility.Collapsed;
+            //Panel.IsEnabled = true;
+            Panel2.Visibility = Visibility.Collapsed;
         }
 
         private void CoreWindow_KeyDown(CoreWindow sender, KeyEventArgs args)
@@ -95,8 +102,12 @@ namespace NeonDealer
 
         private void ClickExit(object sender, RoutedEventArgs e)
         {
-            Window.Current.CoreWindow.KeyDown -= CoreWindow_KeyDown;
-            this.Frame.Navigate(typeof(MainPage));
+            Yes.IsEnabled = true;
+            Yes.Visibility = Visibility.Visible;
+            No.IsEnabled = true;
+            No.Visibility = Visibility.Visible;
+            //Panel.IsEnabled = true;
+            Panel2.Visibility = Visibility.Visible;
         }
 
         private void ClickOptions(object sender, RoutedEventArgs e)
@@ -109,11 +120,6 @@ namespace NeonDealer
         {
             ShowMap();
         }
-        private void ClickVictory(object sender, RoutedEventArgs e)
-        {
-            Window.Current.CoreWindow.KeyDown -= CoreWindow_KeyDown;
-            this.Frame.Navigate(typeof(Podium));
-        }
 
         private void ShowMap()
         {
@@ -121,6 +127,25 @@ namespace NeonDealer
                 Mapa.Visibility = Visibility.Visible;
             else
                 Mapa.Visibility = Visibility.Collapsed;
+        }
+        private void ClickVictory(object sender, RoutedEventArgs e)
+        {
+            Window.Current.CoreWindow.KeyDown -= CoreWindow_KeyDown;
+            this.Frame.Navigate(typeof(Podium));
+        }
+        private void ClickYes(object sender, RoutedEventArgs e)
+        {
+            Window.Current.CoreWindow.KeyDown -= CoreWindow_KeyDown;
+            this.Frame.Navigate(typeof(MainPage));
+        }
+        private void ClickCancel(object sender, RoutedEventArgs e)
+        {
+            Yes.IsEnabled = false;
+            Yes.Visibility = Visibility.Collapsed;
+            No.IsEnabled = false;
+            No.Visibility = Visibility.Collapsed;
+            //Panel.IsEnabled = true;
+            Panel2.Visibility = Visibility.Collapsed;
         }
     }
 }

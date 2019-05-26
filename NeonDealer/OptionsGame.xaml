@@ -48,6 +48,7 @@
         </Button>
 
 
+
         <ListView x:Name="VideoList" Grid.Row ="0" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="3" Margin="108,125,107,178" IsItemClickEnabled="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ItemsSource="{x:Bind video}">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -72,7 +73,7 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <ListView x:Name="ControlsList" Grid.Row ="0" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="4" Margin="108,125,107,178" IsItemClickEnabled="True" ItemsSource="{x:Bind controls}">
+        <ListView x:Name="ControlsList" Grid.Row ="0" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="2" Margin="77.8,90,76.8,33" IsItemClickEnabled="True" ItemsSource="{x:Bind controls}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
