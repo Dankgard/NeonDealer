@@ -32,6 +32,8 @@ namespace NeonDealer
         public Options()
         {
             this.InitializeComponent();
+            video.Add(new Option("Pantalla Completa"));
+            video.Add(new Option("Brillo"));
             video.Add(new Option("Calidad de texturas"));
             video.Add(new Option("Calidad de sombras"));
             video.Add(new Option("Modo daltónico"));
