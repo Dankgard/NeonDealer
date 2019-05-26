@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="NeonDealer.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NeonDealer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush AlignmentX="Center" ImageSource="Assets/FondoMenu.png"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Button Name="Play" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Height="148" Width="206" Click="Play_Click" Grid.Row="2" Grid.Column="3">
+            <Image Source="Assets\Play.png" Margin="-13,-13,-13,-13"/>
+        </Button>
+        <Button Name="Options" HorizontalAlignment="Center" VerticalAlignment="Center" Height="148" Width="206" Click="Options_Click" Grid.Row="2" Grid.Column="2">
+            <Image Source="Assets\Options.png"  Margin="-13,-13,-13,-13"/>
+        </Button>
+        <Button Name="Edit" HorizontalAlignment="Center" VerticalAlignment="Center" Height="148" Width="206" Click="Edit_Click" Grid.Row="2" Grid.Column="4">
+            <Image Source="Assets\Edit.png" Margin="-13,-13,-13,-13"/>
+        </Button>
+        <Button Name="Idiom" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="Idiom_Click" Grid.Row="3" Grid.Column="3" Height="54" Margin="0,0,0,0" Width="102">
+            <Image Name="flag" Source="Assets\Idioma1.png" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Button>
+        <Button Name="Idiom2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="Idiom_Click" Grid.Row="3" Grid.Column="3" Height="54" Margin="0,0,0,0" Width="102">
+            <Image Name="flag2" Source="Assets\Idioma2.png" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Button>
+
+    </Grid>
+</Page>
+    

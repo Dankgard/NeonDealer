@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="NeonDealer.Podium"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NeonDealer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush AlignmentX="Center" ImageSource="Assets/FondoCelebración.png"/>
+        </Grid.Background>
+        <Button Name="Exit" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="97" Width="134" Grid.Row="4" Margin="611,0,0,0" Click="ClickExit">
+            <Image Source="Assets\exit.png" Margin="-45.8,-21.4,-43.6,-22"/>
+        </Button>
+    </Grid>
+</Page>

@@ -1,0 +1,88 @@
+﻿<Page
+    x:Class="NeonDealer.OptionsGame"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NeonDealer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush AlignmentX="Center" ImageSource="Assets/Fondopng.png"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Image Source="Assets\FondoVentana.png" Grid.ColumnSpan="7" Margin="-1571,-176,-1572,-177" Grid.RowSpan="4" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="0"/>
+            </Image.RenderTransform>
+        </Image>
+
+        <Button Name="Audio" HorizontalAlignment="Center" VerticalAlignment="Top" Height="148" Width="206" Grid.Row="3" Grid.Column="3" Click="AudioOptions">
+            <Image Source="Assets\OptionsAudio.png" Margin="-64,-41.4,-62.8,-40.4"/>
+        </Button>
+        <Button Name="Video" HorizontalAlignment="Center" VerticalAlignment="Top" Height="148" Width="206" Grid.Row="3" Grid.Column="1" Click="VideoOptions">
+            <Image Source="Assets\OptionsVideo.png" Margin="-64,-41.4,-62.8,-40.4"/>
+        </Button>
+        <Button Name="Controls" HorizontalAlignment="Center" VerticalAlignment="Top" Height="148" Width="206" Grid.Row="3" Grid.Column="5" Click="ControlOptions">
+            <Image Source="Assets\OptionsControls.png" Margin="-64,-41.4,-62.8,-40.4"/>
+        </Button>
+        <Button Name="Return" HorizontalAlignment="Center" VerticalAlignment="Top" Height="71" Width="104" Click="Options_Return" Grid.Row="0" Grid.Column="0">
+            <Image Source="Assets\Return.png" Margin="-56.8,-28.4,-51.2,-26.6" />
+        </Button>
+
+
+
+        <ListView x:Name="VideoList" Grid.Row ="0" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="3" Margin="108,125,107,178" IsItemClickEnabled="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ItemsSource="{x:Bind video}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width ="300"><Run Foreground="White" FontSize="25" Text="{Binding Name}"></Run></TextBlock>
+                        <Slider RequestedTheme="Dark" BorderBrush="AntiqueWhite" Width="100" Margin="100,0,0,0"></Slider>
+                        <CheckBox HorizontalAlignment="Right" RequestedTheme="Dark" BorderBrush="AntiqueWhite" Margin="100,0,0,0" ></CheckBox>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <ListView x:Name="AudioList" Grid.Row ="0" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="3" Margin="108,125,107,178" IsItemClickEnabled="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  ItemsSource="{x:Bind audio}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width ="300"><Run Foreground="White" FontSize="25" Text="{Binding Name}"></Run></TextBlock>
+                        <Slider RequestedTheme="Dark" BorderBrush="AntiqueWhite" Width="100" Margin="100,0,0,0"></Slider>
+                        <CheckBox HorizontalAlignment="Right" RequestedTheme="Dark" BorderBrush="AntiqueWhite" Margin="100,0,0,0" ></CheckBox>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <ListView x:Name="ControlsList" Grid.Row ="0" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="2" Margin="77.8,90,76.8,33" IsItemClickEnabled="True" ItemsSource="{x:Bind controls}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width ="300"><Run Foreground="White" FontSize="25" Text="{Binding Name}"></Run></TextBlock>
+                        <Slider RequestedTheme="Dark" BorderBrush="AntiqueWhite" Width="100" Margin="100,0,0,0"></Slider>
+                        <CheckBox HorizontalAlignment="Right" RequestedTheme="Dark" BorderBrush="AntiqueWhite" Margin="100,0,0,0" ></CheckBox>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>
