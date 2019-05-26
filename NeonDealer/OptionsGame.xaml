@@ -54,8 +54,8 @@
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Width ="300"><Run Foreground="White" FontSize="25" Text="{Binding Name}"></Run></TextBlock>
-                        <Slider RequestedTheme="Dark" BorderBrush="AntiqueWhite" Width="100" Margin="300,0,0,0"></Slider>
-                        <CheckBox HorizontalAlignment="Right" RequestedTheme="Dark" BorderBrush="AntiqueWhite" Margin="150,0,0,0"></CheckBox>
+                        <Slider RequestedTheme="Dark" BorderBrush="AntiqueWhite" Width="100" Margin="100,0,0,0"></Slider>
+                        <CheckBox HorizontalAlignment="Right" RequestedTheme="Dark" BorderBrush="AntiqueWhite" Margin="100,0,0,0" ></CheckBox>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
@@ -66,8 +66,8 @@
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Width ="300"><Run Foreground="White" FontSize="25" Text="{Binding Name}"></Run></TextBlock>
-                        <Slider RequestedTheme="Dark" BorderBrush="AntiqueWhite" Width="100" Margin="300,0,0,0"></Slider>
-                        <CheckBox HorizontalAlignment="Right" RequestedTheme="Dark" BorderBrush="AntiqueWhite" Margin="150,0,0,0"></CheckBox>
+                        <Slider RequestedTheme="Dark" BorderBrush="AntiqueWhite" Width="100" Margin="100,0,0,0"></Slider>
+                        <CheckBox HorizontalAlignment="Right" RequestedTheme="Dark" BorderBrush="AntiqueWhite" Margin="100,0,0,0" ></CheckBox>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
@@ -78,8 +78,8 @@
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Width ="300"><Run Foreground="White" FontSize="25" Text="{Binding Name}"></Run></TextBlock>
-                        <Slider RequestedTheme="Dark" BorderBrush="AntiqueWhite" Width="100" Margin="300,0,0,0"></Slider>
-                        <CheckBox HorizontalAlignment="Right" RequestedTheme="Dark" BorderBrush="AntiqueWhite" Margin="150,0,0,0"></CheckBox>
+                        <Slider RequestedTheme="Dark" BorderBrush="AntiqueWhite" Width="100" Margin="100,0,0,0"></Slider>
+                        <CheckBox HorizontalAlignment="Right" RequestedTheme="Dark" BorderBrush="AntiqueWhite" Margin="100,0,0,0" ></CheckBox>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

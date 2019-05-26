@@ -7,6 +7,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -69,6 +70,8 @@ namespace NeonDealer
                     rootFrame.Navigate(typeof(MainPage), e.Arguments);
                 }
                 // Asegurarse de que la ventana actual está activa.
+                ApplicationView.PreferredLaunchViewSize = new Size(1280, 720);
+                ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
                 Window.Current.Activate();
             }
         }

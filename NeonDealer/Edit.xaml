@@ -35,10 +35,10 @@
         <Button Name="Return" HorizontalAlignment="Center" VerticalAlignment="Top" Height="71" Width="104" Click="Edit_Return" Grid.Row="0" Grid.Column="0">
             <Image Source="Assets\Return.png" Margin="-56.8,-28.4,-51.2,-26.6" />
         </Button>
-        <Button Click="ChooseModel" HorizontalAlignment="Left" Height="151" Margin="66,69,0,0" Grid.Row="3" VerticalAlignment="Top" Width="192" Grid.ColumnSpan="2" Grid.RowSpan="2">
+        <Button Click="ChooseModel" HorizontalAlignment="Left" Height="151" Margin="22,69,0,0" Grid.Row="3" VerticalAlignment="Top" Width="192" Grid.RowSpan="2">
             <Image Source="Assets/DroneButton.png" />
         </Button>
-        <Button Click="ChooseColor" HorizontalAlignment="Left" Height="149" Margin="63,71,0,0" Grid.Row="3" VerticalAlignment="Top" Width="190" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2">
+        <Button Click="ChooseColor" HorizontalAlignment="Left" Height="149" Margin="14,69,0,0" Grid.Row="3" VerticalAlignment="Top" Width="190" Grid.Column="1" Grid.RowSpan="2">
             <Image Source="Assets/color.png" />
         </Button>
         <Image Source="Assets/Panel2.png" HorizontalAlignment="Left" Height="614" Margin="44,181,0,0" VerticalAlignment="Top" Width="993" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="4" Opacity="100"/>
