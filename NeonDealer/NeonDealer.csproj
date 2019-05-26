@@ -157,9 +157,12 @@
     <Content Include="Assets\BotonMultijugador.png" />
     <Content Include="Assets\Camisetas.png" />
     <Content Include="Assets\Cascos.png" />
+    <Content Include="Assets\Color.png" />
     <Content Include="Assets\Colores.png" />
     <Content Include="Assets\Drone.png" />
+    <Content Include="Assets\dronebutton.png" />
     <Content Include="Assets\Edit.png" />
+    <Content Include="Assets\Esquemadecontroles.png" />
     <Content Include="Assets\Exit.png" />
     <Content Include="Assets\FondoCelebración.png" />
     <Content Include="Assets\FondoEjemplo.png" />
@@ -180,6 +183,7 @@
     <Content Include="Assets\OptionsVideo.png" />
     <Content Include="Assets\Panel.png" />
     <Content Include="Assets\Panel2.png" />
+    <Content Include="Assets\Panel3.png" />
     <Content Include="Assets\Pantalones.png" />
     <Content Include="Assets\Pause.png" />
     <Content Include="Assets\personaje.png" />
